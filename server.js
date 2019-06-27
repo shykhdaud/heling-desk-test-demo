@@ -24,7 +24,7 @@ db.authenticate()
   .done();
 
 const path = require("path");
-// app.use(express.static(__dirname + "/build"));
+app.use(express.static(__dirname + "/build"));
 
 app.use(authRoute);
 
